@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # task-manager
 
 This template should help get you started developing with Vue 3 in Vite.
@@ -27,3 +28,7 @@ npm run dev
 ```sh
 npm run build
 ```
+=======
+# TaskManagementApp
+A task management app that schedules tasks and allow you to modify/edit tasks and update status of completion
+>>>>>>> a032ee9c335b2bfbacb69574870a4408b88c1037
