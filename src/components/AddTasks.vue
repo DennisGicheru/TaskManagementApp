@@ -18,9 +18,9 @@
 </template>
 
 <script>
-let arrayFromStorage = JSON.parse(localStorage.getItem("TODOS"))
-let arrayLength =arrayFromStorage.length
-arrayLength = JSON.stringify(++arrayLength)
+// let arrayFromStorage = JSON.parse(localStorage.getItem("TODOS"))
+// let arrayLength =arrayFromStorage.length
+// arrayLength = JSON.stringify(++arrayLength)
 export default {
     setup() {
         return {
@@ -30,7 +30,7 @@ export default {
     return {
             showmodal: false,
             task: {
-                id: arrayLength,
+                id: "",
                 title: "",
                 description: "",
                 date_added: new Date().toISOString().slice(0,10),

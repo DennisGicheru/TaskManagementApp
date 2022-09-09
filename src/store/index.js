@@ -16,7 +16,7 @@ export default createStore({
 	},
 	mutations: {
         setTasks(state, tasks) {
-            // state.tasks = tasks
+            //state.tasks = tasks
             localStorage.setItem("TODOS", JSON.stringify(state.tasks))
             state.tasks = JSON.parse(localStorage.getItem("TODOS"))
         },
@@ -38,7 +38,7 @@ export default createStore({
                     }
                 }
             localStorage.setItem("TODOS", JSON.stringify(delTodo));
-        },
+        }, 
 
         editTodos(state, {id}) {
             state.tasks = tasks
@@ -49,7 +49,7 @@ export default createStore({
                 }
             }
             localStorage.setItem("TODOS", JSON.stringify(editTodo));
-        },
+        },          
         
         completeTask(state, {id}) {
             state.tasks = tasks

@@ -69,7 +69,7 @@ function deleteTask(id){
             <td class="p-3 text-sm text-gray-800"><input type="checkbox" @click="completeTask(task.id)" v-model="toggle" true-value="complete" false-value="" /><label for="checkbox">{{ toggle }}</label></td>
             <td class="p-3 text-sm text-gray-800"><button type="button" class="bg-green-600 p-1 px-2 rounded-lg font-sm font-bold text-white"><router-link :to="{name: 'EditTasks', params: {id : task.id}}">edit</router-link></button></td>
           </tr>
-        </tbody>
+        </tbody>  
       </table>
     </div>
     <EditTasks v-show="showmodal2" @close="showmodal2 = false" class="absolute inset-0 flex items-center justify-center bg-gray-600 bg-opacity-50"/>  
